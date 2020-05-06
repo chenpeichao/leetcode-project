@@ -1,5 +1,7 @@
 package org.pcchen.twonumsum;
 
+import java.text.SimpleDateFormat;
+
 /**
  * 求两数之和
  * 给定一个数组nums和一个目标值，找出和为目标值的两个整数，并返回数组下标
@@ -9,7 +11,11 @@ package org.pcchen.twonumsum;
  **/
 public class TwoNumSum01 {
     public static void main(String[] args) {
+        long timeBegin = System.currentTimeMillis();
         int[] a = new Solution().twoSum(new int[]{2, 7, 11, 15}, 9);
+        long timeEnd = System.currentTimeMillis();
+        System.out.println("执行耗时：" + (timeEnd - timeBegin));
+        System.out.println(timeBegin);
         System.out.println(a[0] + "," + a[1]);
     }
 }
