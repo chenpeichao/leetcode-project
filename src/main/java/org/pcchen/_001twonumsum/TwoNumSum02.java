@@ -1,4 +1,4 @@
-package org.pcchen.twonumsum;
+package org.pcchen._001twonumsum;
 
 import java.util.HashMap;
 import java.util.Map;

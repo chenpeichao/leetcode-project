@@ -1,6 +1,4 @@
-package org.pcchen.twonumsum;
-
-import java.text.SimpleDateFormat;
+package org.pcchen._001twonumsum;
 
 /**
  * 求两数之和
@@ -12,7 +10,7 @@ import java.text.SimpleDateFormat;
 public class TwoNumSum01 {
     public static void main(String[] args) {
         long timeBegin = System.currentTimeMillis();
-        int[] a = new Solution().twoSum(new int[]{2, 7, 11, 15}, 9);
+        int[] a = new TwoNumSum01Solution().twoSum(new int[]{2, 7, 11, 15}, 9);
         long timeEnd = System.currentTimeMillis();
         System.out.println("执行耗时：" + (timeEnd - timeBegin));
         System.out.println(timeBegin);
@@ -20,7 +18,7 @@ public class TwoNumSum01 {
     }
 }
 
-class Solution {
+class TwoNumSum01Solution {
     public int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
