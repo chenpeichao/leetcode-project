@@ -10,7 +10,7 @@ package org.pcchen._002townumadd;
 public class TwoNumAdd01 {
     public static void main(String[] args) {
         long timeBegin = System.currentTimeMillis();
-        System.out.println(new TwoNumAdd01Solution().reverse(-2147483640));
+        System.out.println(new TwoNumAdd01Solution().reverse2(-2147483640));
         long timeEnd = System.currentTimeMillis();
         System.out.println("执行耗时：" + (timeEnd - timeBegin));
     }
@@ -33,5 +33,24 @@ class TwoNumAdd01Solution {
             x /= 10;
         }
         return res;
+    }
+
+    /**
+     * 第二种方式获取整数翻转值
+     *
+     * @param x
+     * @return
+     */
+    public int reverse2(int x) {
+        long res = 0;
+
+        //进行数据翻转
+        while (x != 0) {
+            res = res * 10 + x % 10;
+            x /= 10;
+        }
+
+        //进行溢出判断
+        return (int) res == res ? (int) res : 0;
     }
 }
