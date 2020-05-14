@@ -15,11 +15,10 @@ public class RemoveDuplicates01 {
     public static void main(String[] args) {
         long timeBegin = System.currentTimeMillis();
 
-        System.out.println(new RemoveDuplicates01Solution().removeDuplicates(new int[]{1, 2, 2, 2}));
+        System.out.println(new RemoveDuplicates01Solution().removeDuplicates(new int[]{1, 2, 2, 2, 3}));
 
         long timeEnd = System.currentTimeMillis();
         System.out.println("执行耗时：" + (timeEnd - timeBegin));
-
     }
 }
 
