@@ -1,4 +1,4 @@
-package org.pcchen._002townumadd;
+package org.pcchen._002numreverse;
 
 /**
  * 两数相加
@@ -7,10 +7,10 @@ package org.pcchen._002townumadd;
  * @author ceek
  * @create 2020-05-07 8:53
  **/
-public class TwoNumAdd01 {
+public class TwoNumReverse01 {
     public static void main(String[] args) {
         long timeBegin = System.currentTimeMillis();
-        System.out.println(new TwoNumAdd01Solution().reverse2(-2147483640));
+        System.out.println(new TwoNumReverse01Solution().reverse2(-2147483640));
         long timeEnd = System.currentTimeMillis();
         System.out.println("执行耗时：" + (timeEnd - timeBegin));
     }
@@ -19,7 +19,7 @@ public class TwoNumAdd01 {
 /**
  *
  */
-class TwoNumAdd01Solution {
+class TwoNumReverse01Solution {
     public int reverse(int x) {
         int res = 0;
         while (x != 0) {
