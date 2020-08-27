@@ -1,8 +1,5 @@
 package org.pcchen._016maxArraySum;
 
-import java.util.Arrays;
-import java.util.Collections;
-
 /**
  * 整数数组最大子序和--动态规划算法
  *
