@@ -29,14 +29,14 @@ public class Sort01_QuickSort_simple {
 
         while (left < right) {
             Sort01_QuickSort_simple.times++;
-            while (left < right && x[right] > flag) {
+            while (left < right && x[right] > flag) {// 从右向左找第一个小于x的数
                 right--;
             }
             if (left < right) {
                 x[left] = x[right];
                 left++;
             }
-            while (left < right && x[left] < flag) {
+            while (left < right && x[left] < flag) {// 从左向右找第一个大于等于x的数
                 left++;
             }
             if (left < right) {
