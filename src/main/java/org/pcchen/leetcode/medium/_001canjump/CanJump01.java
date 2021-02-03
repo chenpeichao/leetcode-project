@@ -12,15 +12,6 @@ public class CanJump01 {
     public static void main(String[] args) throws Exception {
         int a[] = new int[]{3, 2, 1, 0, 4};
         System.out.println(new CanJump01Solution().canJump(a));
-
-        String abc = "abc";
-        Class<String> stringClass = String.class;
-
-        Field value = stringClass.getDeclaredField("value");
-        value.setAccessible(true);
-        char[] o = (char[]) value.get(abc);
-        o[1] = 'f';
-        System.out.println(abc);
     }
 }
 
